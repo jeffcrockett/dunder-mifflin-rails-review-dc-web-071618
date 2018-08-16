@@ -1,0 +1,6 @@
+<%= form_for dog do |f| %>
+<%= f.text_field :name %>
+<%= f.text_field :breed%>
+<%= f.number_field :age %>
+<%= f.collection_select :employee_ids, employees, :id, :name %>
+<% end %>

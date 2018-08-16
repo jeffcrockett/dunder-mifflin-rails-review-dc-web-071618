@@ -1,0 +1,12 @@
+<%= link_to 'Create a new employee', new_employee_path %><br>
+<hr>
+<% @employees.each do |e| %>
+<%= link_to "#{e.first_name} #{e.last_name}", employee_path(e)%><br>
+First name: <%= e.first_name %><br>
+Last name: <%= e.last_name %><br>
+Alias: <%= e.alias %><br>
+Title: <%= e.title %><br>
+Office: <%= e.office %><br>
+Dog's name: <%= e.dog.name %><br>
+<hr>
+<% end %>

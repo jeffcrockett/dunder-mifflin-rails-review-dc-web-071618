@@ -1,0 +1,9 @@
+First Name: <%=@employee.first_name%><br>
+Last Name: <%=@employee.last_name%><br>
+Alias: <%=@employee.alias%><br>
+Title: <%=@employee.title%><br>
+Office: <%=@employee.office%><br>
+Dog: <%=@employee.dog.name%><br>
+<%= link_to 'Edit this employee', edit_employee_path(@employee) %><br>
+<%= link_to 'Delete this employee', employee_path(@employee), {method: 'delete'} %><br>
+<%= link_to 'View all employees', employees_path%>
